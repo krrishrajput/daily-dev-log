@@ -18,3 +18,17 @@ def factorial(n):
 def is_palindrome(s):
     return s == s[::-1]
 
+
+# 2026-09-16 01:18:00.574271
+def binary_search(arr, target):
+    low, high = 0, len(arr)-1
+    while low <= high:
+        mid = (low+high)//2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid+1
+        else:
+            high = mid-1
+    return -1
+
