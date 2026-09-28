@@ -37,3 +37,10 @@ def binary_search(arr, target):
 def is_palindrome(s):
     return s == s[::-1]
 
+
+# 2026-09-28 10:26:55.545509
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
